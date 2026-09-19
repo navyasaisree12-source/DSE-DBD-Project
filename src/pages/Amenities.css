@@ -1,0 +1,238 @@
+/* Amenities Page */
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.amenity-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.amenity-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 14px;
+  background: #f1f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  margin-bottom: 18px;
+}
+
+.amenity-info h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.amenity-info p {
+  margin: 0 0 15px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.amenity-timing {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.amenity-status {
+  display: inline-block;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #e8f8ee;
+  color: #218838;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.amenity-book-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.amenity-book-button:hover {
+  background: #1d4ed8;
+}
+
+.amenity-booking-message {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: #eef6ff;
+  color: #1d4ed8;
+  border: 1px solid #cfe2ff;
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .amenities-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .amenity-card {
+    padding: 20px;
+  }
+}
+/* Amenity Booking Panel */
+
+.amenity-booking-panel {
+  margin-top: 30px;
+  padding: 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.amenity-booking-panel h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  color: #222;
+}
+
+.amenity-booking-panel label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+.amenity-booking-panel input[type="date"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.amenity-booking-panel input[type="date"]:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.amenity-booking-panel h3 {
+  margin: 0 0 15px;
+  font-size: 17px;
+  color: #333;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.time-slot {
+  padding: 11px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-slot:hover {
+  border-color: #2563eb;
+  background: #f1f5ff;
+}
+
+.time-slot.selected {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.selected-slot {
+  margin-top: 20px;
+  padding: 13px 16px;
+  background: #eef6ff;
+  border-radius: 8px;
+  color: #1d4ed8;
+  font-size: 14px;
+}
+
+.confirm-booking-button {
+  margin-top: 22px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm-booking-button:hover {
+  background: #1d4ed8;
+}
+
+.booking-message {
+  margin-top: 15px;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background: #e8f8ee;
+  color: #218838;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .amenity-booking-panel {
+    padding: 20px;
+  }
+
+  .time-slot {
+    flex: 1 1 calc(50% - 12px);
+    text-align: center;
+  }
+
+  .amenity-booking-panel input[type="date"] {
+    max-width: 100%;
+  }
+}

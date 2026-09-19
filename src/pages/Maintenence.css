@@ -1,0 +1,187 @@
+.maintenance-summary {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.summary-icon {
+  width: 60px;
+  height: 60px;
+  background: #f4e5c5;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 27px;
+}
+
+.summary-info {
+  flex: 1;
+}
+
+.summary-info span {
+  color: #888;
+  font-size: 12px;
+}
+
+.summary-info h2 {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+.summary-info small {
+  color: #999;
+  font-size: 11px;
+}
+
+.summary-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.summary-status span {
+  background: #fff3cd;
+  color: #9a7600;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.summary-status button {
+  background: #dcae4f;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.summary-status button:hover {
+  background: #bd8c32;
+}
+
+.maintenance-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.bill-list {
+  margin-top: 15px;
+}
+
+.bill-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 17px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.bill-row:last-child {
+  border-bottom: none;
+}
+
+.bill-icon {
+  width: 42px;
+  height: 42px;
+  background: #f7f7f7;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bill-info {
+  flex: 1;
+}
+
+.bill-info strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.bill-info span {
+  color: #999;
+  font-size: 10px;
+}
+
+.bill-amount {
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 75px;
+}
+
+.bill-status {
+  padding: 6px 11px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.bill-status.pending {
+  background: #fff3cd;
+  color: #9a7600;
+}
+
+.bill-status.paid {
+  background: #e3f6e9;
+  color: #29944b;
+}
+
+.bill-button {
+  background: #dcae4f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.bill-button.view {
+  background: #f1f1f1;
+  color: #555;
+}
+
+.bill-button:hover {
+  opacity: 0.85;
+}
+
+
+@media (max-width: 700px) {
+
+  .maintenance-summary {
+    flex-wrap: wrap;
+  }
+
+  .summary-status {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .bill-row {
+    flex-wrap: wrap;
+  }
+
+  .bill-info {
+    min-width: 150px;
+  }
+
+}

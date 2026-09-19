@@ -1,0 +1,190 @@
+.page-content {
+  width: 100%;
+}
+
+.page-heading {
+  margin-bottom: 25px;
+}
+
+.page-heading h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.page-heading p {
+  color: #888;
+  font-size: 13px;
+}
+
+
+/* FLAT CARD */
+
+.flat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.flat-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.flat-icon {
+  width: 55px;
+  height: 55px;
+  background: #f4e5c5;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+}
+
+.flat-header h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.flat-header p {
+  color: #999;
+  font-size: 12px;
+}
+
+
+/* FLAT DETAILS */
+
+.flat-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.flat-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flat-details span {
+  color: #999;
+  font-size: 11px;
+}
+
+.flat-details strong {
+  font-size: 14px;
+}
+
+
+/* FAMILY CARD */
+
+.resident-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.card-title h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-title p {
+  color: #999;
+  font-size: 11px;
+}
+
+.card-title button {
+  background: #dcae4f;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  padding: 10px 15px;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.card-title button:hover {
+  background: #bd8c32;
+}
+
+
+/* MEMBERS */
+
+.member-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px;
+
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+
+  background: #f4e5c5;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.member span {
+  color: #999;
+  font-size: 10px;
+}
+
+
+@media (max-width: 800px) {
+
+  .flat-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member-list {
+    grid-template-columns: 1fr;
+  }
+
+}
